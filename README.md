@@ -9,15 +9,18 @@ El objetivo es **comparar diferentes frameworks de deep learning (Keras y PyTorc
 
 - `ver-keras/` → Entorno con **Keras** + **Scikit-learn**
   - Implementación de:
-    - Red Neuronal (NN)
+    - Multi-Layer Perceptron (MLP)
     - Red Convolucional (CNN)
-  - Comparación con métodos tradicionales de **Scikit-learn**.
+  - Comparación con métodos tradicionales (Regresión Logística con **Scikit-learn**).
   - Contiene su propio `requirements-keras.txt`.
 
 - `ver-pytorch/` → Entorno con **PyTorch**
   - Implementación de:
-    - Red Neuronal (NN)
+    - Multi-Layer Perceptron (MLP)
     - Red Convolucional (CNN)
+    - **Transfer Learning** de dos formas:
+      - **Feature extractor**.
+      - **Fine-tuning completo**.
   - Contiene su propio `requirements-pytorch.txt`.
 
 - Notebooks en cada directorio (`.ipynb`) que contienen los experimentos.
@@ -78,22 +81,23 @@ El objetivo es **comparar diferentes frameworks de deep learning (Keras y PyTorc
 ## Objetivo del proyecto
 
 * Comparar **Keras** y **PyTorch** en la implementación de redes neuronales.
-* Explorar diferencias entre **NN y CNN** en problemas de clasificación de imágenes.
-* Contrastar enfoques de **aprendizaje tradicional** (Scikit-learn) con **Deep Learning**.
+* Explorar diferencias entre **MLP y CNN** en problemas de clasificación de imágenes.
+* Contrastar enfoques de **aprendizaje tradicional** (Regresión logística) con **Deep Learning**.
+* Incluir un análisis de **Transfer Learning** en PyTorch, diferenciando entre feature extractor y fine-tuning.
 * Demostrar fortalezas y debilidades de cada framework y modelo en el dataset **Fashion-MNIST**.
 
 ---
 
 ## Dataset
 
-Se utiliza el dataset **Fashion-MNIST**, que contiene imágenes en escala de grises de 28x28 píxeles con 10 categorías de ropa y accesorios.
+Para la clasificación se utiliza el dataset **Fashion-MNIST**, que contiene imágenes en escala de grises de 28x28 píxeles con 10 categorías de ropa y accesorios.
 Es un dataset estándar para benchmarking en visión por computadora.
-
+Para el **Transfer Learning** se utiliza un dataset de hormigas y abejas proporcionado por [Pytorch](https://download.pytorch.org/tutorial/hymenoptera_data.zip).
 ---
 
 ## Autor
 
-Trabajo realizado en el marco del Magíster en Automatización y Conversión de la Energía como ejercicio de revisión del paper *Tosi, D., Kokaj, R. & Roccetti, M. 15 years of Big Data: a systematic literature review. J Big Data 11, 73 (2024)*. https://doi.org/10.1186/s40537-024-00914-9
+Trabajo realizado en el marco del Magíster en Automatización y Conversión de la Energía como ejercicio de revisión del paper *H. A. Selmy, H. K. Mohamed y W. Medhat, “Big data analytics deep learning techniques and applications: A survey,” Information Systems, vol. 120, art. 102318, 2024*. https://doi.org/10.1016/j.is.2023.102318
 
 ---
 
