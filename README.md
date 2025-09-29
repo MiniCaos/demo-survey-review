@@ -89,10 +89,10 @@ El objetivo es **comparar diferentes frameworks de deep learning (Keras y PyTorc
 ---
 
 ## Dataset
-
 Para la clasificación se utiliza el dataset **Fashion-MNIST**, que contiene imágenes en escala de grises de 28x28 píxeles con 10 categorías de ropa y accesorios.
 Es un dataset estándar para benchmarking en visión por computadora.
-Para el **Transfer Learning** se utiliza un dataset de hormigas y abejas proporcionado por [Pytorch](https://download.pytorch.org/tutorial/hymenoptera_data.zip).
+Para el **Transfer Learning** se utiliza un dataset de hormigas y abejas proporcionado por [Pytorch](https://download.pytorch.org/tutorial/hymenoptera_data.zip)
+
 ---
 
 ## Autor
